@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RideApp.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="12" CornerRadius="0">
+            <Label Text="Welcome to Ride App!" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+        </Frame>
+        <Label x:Name="PhoneNumberLbl" Text="Enter your Phone Number" HorizontalTextAlignment="Center" FontSize="Title" Padding="30,10,30,10"/>
+        <Entry x:Name="PhoneNumberEntry" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Keyboard="Numeric" MaxLength="12" />        
+        <!-- <Label Text="Do not make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>-->
+       <!-- <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="FUCK YOU" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>-->        
+        <Button Text="Enter" IsEnabled="True" Clicked="OnButtonClicked" />
+        <Label x:Name="OTPSent" Text="" HorizontalTextAlignment="Center" FontSize="Title" Padding="30,10,30,10"/>
+    </StackLayout>
+
+</ContentPage>

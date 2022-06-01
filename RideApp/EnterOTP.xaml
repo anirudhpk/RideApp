@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RideApp.EnterOTP">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="enterOTPLbl" Text="Please enter your OTP" HorizontalTextAlignment="Center" FontSize="Title" Padding="30,10,30,10"/>
+            <Entry x:Name="enterOTPTxt" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Keyboard="Numeric" MaxLength="4" />
+            <Button Text="enterOTP" IsEnabled="True" Clicked="OnButtonClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
